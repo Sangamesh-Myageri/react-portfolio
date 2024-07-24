@@ -1,0 +1,63 @@
+/* Your existing CSS styles for navigation */
+.navbar {
+    background-color: #5318eb;
+    color: #fff;
+  }
+  
+  .navbar-brand .full-name {
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .navbar-brand .initials {
+    transition: opacity 1s ease;
+    opacity: 0;
+  }
+  
+  .navbar-brand.scrolled .full-name {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  
+  .navbar-brand.scrolled .initials {
+    opacity: 1;
+  }
+  
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .custom-nav {
+    background-image: linear-gradient(90deg, #5318eb, #ab6ef9);
+  }
+  
+  .navbar-brand {
+    color: hsla(0, 0%, 100%, .8);
+  }
+  
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  .nav-link.active {
+    color: #fff;
+  }
+  
+  .job-role {
+    color: #fff;
+  }
+  
